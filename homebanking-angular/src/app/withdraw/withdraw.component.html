@@ -1,0 +1,11 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <h1>Withdraw</h1>
+  <form>
+    <mat-form-field>
+      <input matInput type="number" placeholder="Enter amount" [(ngModel)]="amount" name="amount">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="withdraw()">Withdraw</button>
+    <button mat-raised-button color="accent" (click)="goBack()">Go Back</button>
+  </form>
+  <p>{{ insufficientFundsMessage }}</p>
+</div>

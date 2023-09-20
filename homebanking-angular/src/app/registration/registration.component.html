@@ -1,0 +1,45 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Registration</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <!-- Form for registration -->
+      <form>
+        <!-- Mat Form Field for Email -->
+        <div>
+          <mat-form-field>
+            <input matInput type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+          </mat-form-field>
+        </div>
+
+        <!-- Mat Form Field for Username -->
+        <div>
+          <mat-form-field>
+            <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+          </mat-form-field>
+        </div>
+
+        <!-- Mat Form Field for Password -->
+        <div>
+          <mat-form-field>
+            <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+          </mat-form-field>
+        </div>
+
+        <!-- Mat Form Field for Confirm Password -->
+        <div>
+          <mat-form-field>
+            <input matInput type="password" placeholder="Confirm Password" [(ngModel)]="confirmPassword" name="confirmPassword" required>
+          </mat-form-field>
+        </div>
+      </form>
+    </mat-card-content>
+    <!-- Mat Card Actions -->
+    <mat-card-actions fxLayout="row" fxLayoutAlign="end">
+      <button mat-raised-button color="primary" (click)="register()">Register</button>
+      <!-- Clickable phrase to go to the login page -->
+      <p style="margin-top: 10px;">Already have an account? <a routerLink="/login">Press Here</a></p>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,12 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <h1>Welcome to the Bank</h1>
+  <button mat-raised-button color="primary" routerLink="/deposit">Deposit</button>
+  <button mat-raised-button color="primary" routerLink="/withdraw">Withdraw</button>
+  <button mat-raised-button color="primary" routerLink="/list-movements">List Movements</button>
+  <div class="balance-container">
+    <p>Balance: <span *ngIf="showBalance">{{ balance }}</span></p>
+    <button mat-icon-button class="toggle-button" (click)="toggleBalance()">
+      <mat-icon>{{ showBalance ? 'visibility_off' : 'visibility' }}</mat-icon>
+    </button>
+  </div>
+</div>

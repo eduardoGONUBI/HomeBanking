@@ -1,0 +1,11 @@
+<!-- movements-dialog.component.html -->
+<h2>{{ data.title }}</h2>
+<p>This is the list of {{ data.title.toLowerCase() }}.</p>
+
+<!-- Display the deposit history -->
+<ul>
+  <li *ngFor="let deposit of data.movements">
+    Date: {{ deposit.timestamp }}<br>
+    Amount: {{ deposit.amount }}<br>
+  </li>
+</ul>

@@ -1,0 +1,15 @@
+/* Add this CSS in welcome.component.css */
+.balance-placeholder {
+    margin-top: 20px; /* Adjust the top margin to increase or decrease the space */
+    font-size: 16px; /* Adjust the font size to make it bigger */
+  }
+  
+  .balance-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-button {
+    font-size: 16px; /* Adjust the font size to make the button smaller */
+    margin-left: 10px; /* Add margin to separate the button from the balance */
+  }
